@@ -24,6 +24,7 @@ ifeq ($(BOARD_RIL_NO_CELLINFOLIST),true)
 LOCAL_CFLAGS += -DRIL_NO_CELL_INFO_LIST
 endif
 
+LOCAL_GCC := true
 LOCAL_MODULE:= libril
 
 LOCAL_LDLIBS += -lpthread
