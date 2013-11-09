@@ -12,7 +12,6 @@ LOCAL_SRC_FILES:= \
     ril_event.cpp
 
 LOCAL_SHARED_LIBRARIES := \
-    liblog \
     libutils \
     libbinder \
     libcutils \
@@ -20,11 +19,14 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_CFLAGS :=
 
+<<<<<<< HEAD
 ifeq ($(BOARD_RIL_NO_CELLINFOLIST),true)
 LOCAL_CFLAGS += -DRIL_NO_CELL_INFO_LIST
 endif
 
 LOCAL_GCC := true
+=======
+>>>>>>> 8e12ead... msm8960-common: Revert qcril radio changes
 LOCAL_MODULE:= libril
 
 LOCAL_LDLIBS += -lpthread
