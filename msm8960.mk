@@ -88,6 +88,12 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
 
+# Wifi
+PRODUCT_PACKAGES += \
+    libwpa_client \
+    hostapd \
+    wpa_supplicant
+
 # WPA supplicant config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
