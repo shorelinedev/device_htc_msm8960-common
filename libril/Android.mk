@@ -26,6 +26,10 @@ endif
 
 LOCAL_GCC := true
 
+ifeq ($(BOARD_RIL_FIVE_SEARCH_RESPONSES),true)
+LOCAL_CFLAGS += -DRIL_FIVE_SEARCH_RESPONSES
+endif
+
 LOCAL_MODULE:= libril
 
 LOCAL_LDLIBS += -lpthread
